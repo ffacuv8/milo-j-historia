@@ -16,7 +16,7 @@
 
         /* Capa semitransparente (segundo fondo encima) */
         .overlay {
-            background: rgba(0, 0, 0, 0.4); /* podés cambiar la opacidad */
+            background: rgba(0, 0, 0, 0.4);
             min-height: 100vh;
             padding: 40px 20px;
         }
@@ -53,6 +53,25 @@
         img {
             margin-top: 20px;
             border-radius: 10px;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 40px;
+            padding: 15px;
+            background: rgba(0,0,0,0.6);
+            color: white;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        footer a {
+            color: #9ecbff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -99,10 +118,26 @@
             <p>– Varias canciones entraron al top de Spotify Argentina.</p>
             <p>– La crítica elogió su honestidad emocional.</p>
 
-            <img src="111.jpg" width="500" height="500" alt="Álbum 111 de Milo J">
+            <!-- Imagen con texto alternativo agregado -->
+            <img src="111.jpg" width="500" height="500" alt="Portada del álbum 111 de Milo J">
+
+            <!-- Video de YouTube incrustado -->
+            <h2>🎥 Milo J Cantando – Video</h2>
+            <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/wW8N4vJtD8Q" 
+                title="Milo J en vivo" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+            </iframe>
+
+            <!-- Footer con enlace a Wikipedia -->
+            <footer>
+                Información tomada parcialmente de 
+                <a href="https://es.wikipedia.org/wiki/Milo_J" target="_blank">Wikipedia – Milo J</a>
+            </footer>
 
         </div>
     </div>
 </body>
 </html>
-
